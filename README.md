@@ -30,7 +30,6 @@ jobs:
         path: terraform/dev
 ```
 
-
 ## License
 
 The MIT License (MIT)
