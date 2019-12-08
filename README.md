@@ -24,8 +24,8 @@ jobs:
       with:
         arm_client_id: ${{ secrets.ARM_CLIENT_ID }}
         arm_client_secret: ${{ secrets.ARM_CLIENT_SECRET }}
-        arm_subscription_id: ${{ ARM_SUBSCRIPTION_ID }}
-        arm_tenant_id: ${{ ARM_TENANT_ID }}
+        arm_subscription_id: ${{ secrets.ARM_SUBSCRIPTION_ID }}
+        arm_tenant_id: ${{ secrets.ARM_TENANT_ID }}
         variables: var=${{ github.sha }}
         path: terraform/dev
 ```
