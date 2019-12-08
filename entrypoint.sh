@@ -7,8 +7,9 @@ export ARM_CLIENT_SECRET=$INPUT_ARM_CLIENT_SECRET
 export ARM_SUBSCRIPTION_ID=$INPUT_ARM_SUBSCRIPTION_ID
 export ARM_TENANT_ID=$INPUT_ARM_TENANT_ID
 export VARIABLES=$INPUT_VARIABLES
+export INPUT_PATH=$INPUT_PATH
 
-cd $INPUT_PATH
+cd /github/workspace/$INPUT_PATH
 
 echo "terraform init -input=false"
 terraform init -input=false
