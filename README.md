@@ -10,6 +10,7 @@ This Action allows you to apply Terraform manifests to Azure
 | `arm_client_secret` | `string` | | Azure Service Principal client_secret |
 | `arm_subscription_id` | `string` | | Azure subscription |
 | `arm_tenant_id` | `string` | | Azure Tenant id |
+| `arm_access_key` | `string` | | Azure Storage access key |
 | `variables` | `string` | `""` | Comma-separated string of Terraform variables |
 | `path` | `string` | `.` | Path to Terraform directory, defaults to the working directory |
 

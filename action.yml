@@ -21,6 +21,9 @@ inputs:
   arm_tenant_id:
     description: Azure Tenant id
     required: true
+  arm_access_key:
+    description: Azure Access key for state file storage account
+    required: true
   variables:
     description: Comma-separated string of Terraform variables
     default: ""
