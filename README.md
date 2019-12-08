@@ -30,13 +30,13 @@ jobs:
   provisioning:
     runs-on: ubuntu-latest
     steps:
-    - uses: ams0/terraform-apply-for-azure-action@v3
+    - uses: ams0/terraform-apply-for-azure-action@v1
       with:
         arm_client_id: ${{ secrets.ARM_CLIENT_ID }}
         arm_client_secret: ${{ secrets.ARM_CLIENT_SECRET }}
         arm_subscription_id: ${{ secrets.ARM_SUBSCRIPTION_ID }}
         arm_tenant_id: ${{ secrets.ARM_TENANT_ID }}
-        variables: var=${{ github.sha }}
+        variables: var=${{ rg_name=aks }}
         path: terraform/dev
 ```
 
