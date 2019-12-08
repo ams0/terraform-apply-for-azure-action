@@ -2,6 +2,7 @@ name: Terraform Apply for Azure
 author: Alessandro Vozza <alessandro.vozza@microsoft.com>
 branding:
   icon: hash
+  color: white
 description: Apply Terraform templates to Azure.
 inputs:
   terraform_version:
