@@ -1,0 +1,31 @@
+name: Terraform Apply for Azure
+author: Alessandro Vozza <alessandro.vozza@microsoft.com>
+branding:
+  icon: hash
+description: Apply Terraform templates to Azure.
+inputs:
+  terraform_version:
+    description: Terraform version
+    required: false
+    default: 0.12.17
+  arm_client_id:
+    description: Azure Service Principal id
+    required: true
+  arm_client_secret:
+    description: Azure Service Principal secret
+    required: true
+  arm_subscription_id:
+    description: Azure Subscription id
+    required: true
+  arm_tenant_id:
+    description: Azure Tenant id
+    required: true
+  variables:
+    description: Comma-separated string of Terraform variables
+    default: ""
+  path:
+    description: Path to Terraform directory, defaults to the working directory
+    default: .
+runs:
+  using: docker
+  image: Dockerfile
