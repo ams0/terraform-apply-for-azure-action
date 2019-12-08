@@ -20,7 +20,7 @@ jobs:
   provisioning:
     runs-on: ubuntu-latest
     steps:
-    - uses: ams0/terraform-apply-for-azure-action@v1
+    - uses: ams0/terraform-apply-for-azure-action@v3
       with:
         arm_client_id: ${{ secrets.ARM_CLIENT_ID }}
         arm_client_secret: ${{ secrets.ARM_CLIENT_SECRET }}
