@@ -1,6 +1,15 @@
 # Terraform Apply for Azure Action
 
-This Action allows you to apply Terraform manifests to Azure
+This Action allows you to apply Terraform manifests to Azure. It expects an Azure blob storage (to be specified in your manifests like the below) to store the shared state.
+
+```terraform
+terraform {
+  backend "azurerm" {
+    storage_account_name = "storage_account_name"
+    container_name       = "storage_container_name"
+  }
+}
+```
 
 ## Parameters
 
