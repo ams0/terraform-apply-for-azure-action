@@ -12,7 +12,7 @@ export INPUT_PATH=$INPUT_PATH
 cd /github/workspace/$INPUT_PATH
 
 echo "terraform init -input=false"
-terraform init -input=false
+terraform init -input=false -backend-config="key=`basename $PWD`"
 
 var_args=""
 VARIABLES=$(echo "$VARIABLES" | tr "," "\n")
